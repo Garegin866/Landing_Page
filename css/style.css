@@ -1,0 +1,483 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto&display=swap");
+@font-face {
+  font-family: 'Helvetica Neue LT Pro 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 55 Roman"), url("../fonts/HelveticaNeueLTProRoman.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro 45 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 45 Light"), url("../fonts/HelveticaNeueLTProLt.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Pro 65 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue LT Pro 65 Medium"), url("../fonts/HelveticaNeueLTProMd.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Merryweather';
+  src: url("../fonts/8919.eot");
+  src: local("☺"), url("../fonts/8919.woff") format("woff"), url("../fonts/8919.ttf") format("truetype"), url("../fonts/8919.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+main nav .nav {
+  min-height: 55px;
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main nav .nav a {
+  text-decoration: none;
+  color: #8a8888;
+  font-family: "Roboto", sans-serif;
+}
+
+main nav .nav a:hover {
+  color: #1d1d1d;
+}
+
+main header {
+  width: 100%;
+  min-height: 890px;
+  padding-bottom: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 165px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .header h1 {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-size: 44px;
+  font-weight: 100;
+}
+
+main header .header p {
+  padding-top: 10px;
+  font-family: "Merryweather";
+  font-size: 16px;
+  font-weight: 100;
+  color: #898888;
+}
+
+main header .header a {
+  margin-top: 45px;
+  text-decoration: none;
+  padding: 20px 0;
+  width: 180px;
+  color: #1d1d1d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #1d1d1d;
+  text-align: center;
+}
+
+main header .header a:hover {
+  border-color: #ffffff;
+  background: #1d1d1d;
+  color: #ffffff;
+}
+
+main .about_us {
+  min-height: 1341px;
+  width: 100%;
+  background-image: url(../img/about_us.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .about_us .about h3 {
+  color: #ffffff;
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 48px;
+  font-weight: 100;
+}
+
+main .about_us .about p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #b7b7b7;
+}
+
+main .about_us .about_us_content {
+  max-width: 970px;
+}
+
+main .about_us .about_us_content .about_container {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 160px;
+}
+
+main .about_us .about_us_content .about_container .about_left {
+  text-align: right;
+  height: 500px;
+  max-width: 400px;
+  padding-right: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .about_us .about_us_content .about_container .about_left .about2011 {
+  position: relative;
+}
+
+main .about_us .about_us_content .about_container .about_left .about2011 div {
+  position: absolute;
+  width: 30px;
+  top: 25px;
+  right: -98px;
+}
+
+main .about_us .about_us_content .about_container .about_left .about2011 div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .about_us .about_us_content .about_container .about_left .about2013 {
+  position: relative;
+}
+
+main .about_us .about_us_content .about_container .about_left .about2013 div {
+  position: absolute;
+  width: 45px;
+  top: 25px;
+  right: -106px;
+}
+
+main .about_us .about_us_content .about_container .about_left .about2013 div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .about_us .about_us_content .about_container .about_right {
+  text-align: left;
+  margin-top: 140px;
+  max-width: 400px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .about_us .about_us_content .about_container .about_right .about2012 {
+  position: relative;
+}
+
+main .about_us .about_us_content .about_container .about_right .about2012 div {
+  position: absolute;
+  width: 30px;
+  top: 25px;
+  left: -92px;
+}
+
+main .about_us .about_us_content .about_container .about_right .about2012 div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .about_us .about_us_content .about_container .about_right .about2014 {
+  position: relative;
+}
+
+main .about_us .about_us_content .about_container .about_right .about2014 div {
+  position: absolute;
+  width: 30px;
+  top: 25px;
+  left: -92px;
+}
+
+main .about_us .about_us_content .about_container .about_right .about2014 div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .team {
+  background-color: #ffffff;
+  height: auto;
+  width: 100%;
+  padding: 80px 0 128px 0;
+}
+
+main .team .team_head {
+  text-align: center;
+}
+
+main .team .team_head h2 {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-size: 34px;
+  font-weight: 100;
+  color: #1d1d1d;
+}
+
+main .team .team_head p {
+  font-family: "Merryweather";
+  font-size: 100;
+  color: #898888;
+  font-size: 16px;
+}
+
+main .team .team_content .team_icons {
+  padding-top: 127px;
+  max-width: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+main .team .team_content .team_icons .box {
+  width: 170px;
+}
+
+main .team .team_content .team_icons .box h3 {
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 24px;
+  text-align: center;
+  color: #464646;
+  padding-top: 30px;
+}
+
+main .team .team_content .team_icons .box p {
+  text-align: center;
+  font-size: 13px;
+  color: #b3b3b3;
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+}
+
+main .team .team_content .team_icons .box .icon_img {
+  width: 170px;
+}
+
+main .team .team_content .team_icons .box .icon_img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .team .team_content .team_icons .pad {
+  padding-top: 90px;
+}
+
+main .services {
+  width: 100%;
+  background: url(../img/services.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1365px;
+  padding-top: 260px;
+}
+
+main .services .services_content .services_head {
+  padding-bottom: 210px;
+  text-align: center;
+}
+
+main .services .services_content .services_head h2 {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-size: 34px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+main .services .services_content .services_head p {
+  font-family: "Merryweather";
+  font-size: 100;
+  color: #898888;
+  font-size: 16px;
+}
+
+main .services .services_content .services_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .services .services_content .services_main .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 340px;
+  text-align: center;
+}
+
+main .services .services_content .services_main .box .icon {
+  width: 170px;
+  padding-bottom: 35px;
+}
+
+main .services .services_content .services_main .box .icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .services .services_content .services_main .box h3 {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-weight: 100;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+main .services .services_content .services_main .box p {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-weight: 100;
+  font-size: 18px;
+  color: #383838;
+  padding-top: 10px;
+}
+
+main .services .services_content .blog {
+  margin-top: 140px;
+  background-image: url(../img/blog.png);
+}
+
+main .services .services_content .blog .blog_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 260px;
+}
+
+main .services .services_content .blog .blog_main a {
+  text-decoration: none;
+  padding: 20px 0;
+  width: 180px;
+  color: #1d1d1d;
+  font-family: "Helvetica Neue LT Pro 65 Medium";
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  text-align: center;
+  background: #ffffff;
+}
+
+main .services .services_content .blog .blog_main a:hover {
+  background: #d4d2d2;
+  border-color: #d4d2d2;
+}
+
+main .contact .contact_content {
+  min-height: 955px;
+}
+
+main .contact .contact_content .contact_head {
+  padding-top: 40px;
+  text-align: center;
+}
+
+main .contact .contact_content .contact_head h2 {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-size: 34px;
+  font-weight: 100;
+  color: #1d1d1d;
+}
+
+main .contact .contact_content .contact_head p {
+  font-family: "Merryweather";
+  font-size: 100;
+  color: #898888;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
