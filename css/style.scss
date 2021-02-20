@@ -72,7 +72,59 @@ main{
     //Navigation
 
     nav{
+        @media screen and(max-width:590px) {
+            padding: 25px 25px 0 25px;
+        }
+
+    
+        .mobile_menu {
+            display: none;
+            width: 100%;
+            min-height: 55px;
+            cursor: pointer;
+            
+            @media screen and(max-width:445px) {
+                min-height: 40px;
+            }
+
+            .logo{
+                width: 55px;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                @media screen and(max-width:445px) {
+                    width: 40px;
+                }
+            }
+
+            .menu_icon{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                @media screen and(max-width:445px) {
+                    height: 35px;
+                }
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: rgb(0, 0, 0);
+                }
+            }
+            @media screen and(max-width:590px) {
+                display: flex;
+                justify-content: space-between;
+
+            }
+        }
+
         .nav{
+
+            @media screen and(max-width:590px) {
+                display: none;
+            }
+
             min-height: 55px;
             max-width: 650px;
             display: flex;
@@ -95,10 +147,27 @@ main{
 
     header{
         width: 100%;
-        min-height: 890px;
-        padding-bottom: 135px;
+        min-height: 790px;
+        padding-bottom: 105px;
         display: flex;
         align-items: center;
+
+        @media screen and(max-width:445px) {
+            min-height: 300px !important;
+            padding-bottom: 0 !important;
+        }
+
+        @media screen and(max-width:590px) {
+            .container{
+                padding: 0;
+            }
+            height: auto;
+        }
+
+        @media screen and(max-width:954px) {
+            padding-bottom: 55px;
+            min-height: 490px;
+        }
 
         .header{
             display: flex;
@@ -112,6 +181,15 @@ main{
                 font-family: $HelveticaLt;
                 font-size: 44px;
                 font-weight: 100;
+                @media screen and(max-width:590px) {
+                    font-size: 34px;
+                }
+
+                @media screen and(max-width:445px) {
+                    font-size: 26px;
+                    min-height: auto;
+                }
+
             }
 
             p{
@@ -120,6 +198,14 @@ main{
                 font-size: 16px;
                 font-weight: 100;
                 color: #898888;
+                @media screen and(max-width:590px) {
+                    font-size: 13px;
+                }
+
+                @media screen and(max-width:445px) {
+                    font-size: 9px;
+                    padding-top: 5px;
+                }
             }
 
             a{
@@ -139,6 +225,17 @@ main{
                     background: $hover;
                     color: $defaultLight;
                 }
+
+                @media screen and(max-width:590px) {
+                    padding: 15px 0;
+                    width: 160px;
+                    margin-top: 30px;
+                }
+                @media screen and(max-width:445px) {
+                    padding: 10px 0;
+                    width: 100px;
+                    margin-top: 20px;
+                }
             }
         }
     }
@@ -151,9 +248,16 @@ main{
         background-size: cover;
         background-repeat: no-repeat;
 
+        @media screen and(max-width:974px) {
+            min-height: 800px;
+        }
 
+        @media screen and(max-width:564px) {
+            display: none;
+        }
         .about{
-
+            
+            padding: 5px;
             h3{
                 color: $defaultLight;
                 font-family: $HelveticaRoman;
@@ -167,15 +271,36 @@ main{
                 font-size: 15px;
                 color: #b7b7b7;
             }
+
+
+
+            @media screen and(max-width:974px) {
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 12px;
+                    
+                }
+            }
+
+            @media screen and(max-width:813px) {
+
+            }
+
         }
 
         .about_us_content{
-            max-width: 970px;
+            max-width: 960px;
             .about_container{
-                max-width: 960px;
+                max-width: 947px;
                 display: flex;
                 justify-content: center;
                 padding-top: 160px;
+
+                @media screen and(max-width:974px) {
+                    padding-top: 100px;
+                }
 
                 .about_left{
                     text-align: right;
@@ -185,6 +310,11 @@ main{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+
+                    
+                    @media screen and(max-width:974px) {
+                        height: 340px;
+                    }
 
                     .about2011{
                         position: relative;
@@ -198,6 +328,10 @@ main{
                                 display: block;
                                 width: 100%;
                                 height: auto;
+                            }
+                            
+                            @media screen and(max-width:974px) {
+                                right: -94px;
                             }
                         }
                     }
@@ -215,6 +349,9 @@ main{
                                 width: 100%;
                                 height: auto;
                             }
+                            @media screen and(max-width:974px) {
+                                right: -104px;
+                            }
                         }
                     }
                 }
@@ -226,6 +363,12 @@ main{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+
+                    
+                    @media screen and(max-width:974px) {
+                        height: 330px;
+                    }
+
                     .about2012{
                         position: relative;
                         div{
@@ -238,6 +381,9 @@ main{
                                 display: block;
                                 width: 100%;
                                 height: auto;
+                            }
+                            @media screen and(max-width:974px) {
+                                left: -97px;
                             }
                         }
                     }
@@ -254,6 +400,9 @@ main{
                                 width: 100%;
                                 height: auto;
                             }
+                            @media screen and(max-width:974px) {
+                                left: -95px;
+                            }
                         }
                     }
                 }
@@ -266,25 +415,47 @@ main{
         height: auto;
         width: 100%;
         padding: 80px 0 128px 0 ;
+        @media screen and(max-width:638px) {
+            padding-top: 40px;
+            padding-bottom: 58px;
+        }
+
+
 
         .team_head{
             text-align: center;
+            @media screen and(max-width:638px) {
+                margin-bottom: 40px;
+            }
             h2{
                 font-family: $HelveticaLt;
                 font-size: 34px;
                 font-weight: 100;
                 color: $defaultDark;
+                @media screen and(max-width:445px) {
+                    font-size: 26px;
+                }
             }
             p{
                 font-family: $Merryweather;
                 font-size: 100;
                 color: #898888;
                 font-size: 16px;
+                @media screen and(max-width:445px) {
+                    font-size: 14px;
+                }
             }
         }
 
         .team_content{
             .team_icons{
+
+                @media screen and(max-width:638px) {
+                    flex-direction:column;
+                    align-items: center;
+                    padding-top: 0px;
+                }
+
                 padding-top: 127px;
                 max-width: 970px;
                 display: flex;
@@ -292,6 +463,9 @@ main{
                 margin: 0 auto;
 
                 .box{
+                    @media screen and(max-width:638px) {
+                        padding-top: 40px;
+                    }
                     h3{
                         font-family: $HelveticaRoman;
                         font-size: 24px;
@@ -319,6 +493,9 @@ main{
 
                 .pad{
                     padding-top: 90px;
+                    @media screen and(max-width:638px) { 
+                        padding-top: 20px;
+                    }
                 }
             
             }
@@ -333,21 +510,39 @@ main{
          background-position: center;
          min-height: 1365px;
          padding-top: 260px;
+
+         @media screen and(max-width:832px) {
+             background-image: none;
+             background-color: $defaultDark;
+             height: auto;
+             padding-top: 70px;
+         }
+
         .services_content{
             .services_head{
                 padding-bottom: 210px;
                 text-align: center;
+
+                @media screen and(max-width:832px) {
+                    padding-bottom: 100px;
+                }
                 h2{
                     font-family: $HelveticaLt;
                     font-size: 34px;
                     font-weight: 100;
                     color: $defaultLight;
+                    @media screen and(max-width:445px) {
+                        font-size: 26px;
+                    }
                 }
                 p{
                     font-family: $Merryweather;
                     font-size: 100;
                     color: #898888;
                     font-size: 16px;
+                    @media screen and(max-width:445px) {
+                        font-size: 14px;
+                    }
                 }
             }
             .services_main{
@@ -355,12 +550,25 @@ main{
                 margin: 0 auto;
                 justify-content: space-between;
 
+                @media screen and(max-width:832px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .box{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     max-width: 340px;
                     text-align: center;
+
+                    @media screen and(max-width:1055px) {
+                        padding: 5px;
+                    }
+
+                    @media screen and(max-width:832px) {
+                        margin-bottom: 40px;
+                    }
 
                     .icon{
                         width: 170px;
@@ -389,10 +597,18 @@ main{
             .blog{
                 margin-top: 140px;
                 background-image: url(../img/blog.png);
+
+                @media screen and(max-width:832px) {
+                    margin-top: 40px;
+                }
                 .blog_main{
                     display: flex;
                     justify-content: center;
                     padding-top: 260px;
+                    @media screen and(max-width:832px) {
+                        padding-top: 100px;
+                        padding-bottom: 50px;
+                    }
                     a{
                         text-decoration: none;
                         padding: 20px 0;
@@ -428,20 +644,25 @@ main{
                     font-size: 34px;
                     font-weight: 100;
                     color: $defaultDark;
+                    @media screen and(max-width:445px) {
+                        font-size: 26px;
+                    }
                 }
                 p{
                     font-family: $Merryweather;
                     font-size: 100;
                     color: #898888;
                     font-size: 16px;
+                    @media screen and(max-width:445px) {
+                        font-size: 14px;
+                    }
                 }
-            }
-            .contact_head{
-
             }
         }
     }
 }
+
+
 
 
 

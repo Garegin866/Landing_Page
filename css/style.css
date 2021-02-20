@@ -46,6 +46,70 @@ main {
   width: 100%;
 }
 
+@media screen and (max-width: 590px) {
+  main nav {
+    padding: 25px 25px 0 25px;
+  }
+}
+
+main nav .mobile_menu {
+  display: none;
+  width: 100%;
+  min-height: 55px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 445px) {
+  main nav .mobile_menu {
+    min-height: 40px;
+  }
+}
+
+main nav .mobile_menu .logo {
+  width: 55px;
+}
+
+main nav .mobile_menu .logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 445px) {
+  main nav .mobile_menu .logo {
+    width: 40px;
+  }
+}
+
+main nav .mobile_menu .menu_icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 445px) {
+  main nav .mobile_menu .menu_icon {
+    height: 35px;
+  }
+}
+
+main nav .mobile_menu .menu_icon svg {
+  width: 100%;
+  height: 100%;
+  fill: black;
+}
+
+@media screen and (max-width: 590px) {
+  main nav .mobile_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 main nav .nav {
   min-height: 55px;
   max-width: 650px;
@@ -60,6 +124,12 @@ main nav .nav {
           align-items: center;
 }
 
+@media screen and (max-width: 590px) {
+  main nav .nav {
+    display: none;
+  }
+}
+
 main nav .nav a {
   text-decoration: none;
   color: #8a8888;
@@ -72,14 +142,37 @@ main nav .nav a:hover {
 
 main header {
   width: 100%;
-  min-height: 890px;
-  padding-bottom: 135px;
+  min-height: 790px;
+  padding-bottom: 105px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 445px) {
+  main header {
+    min-height: 300px !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  main header {
+    height: auto;
+  }
+  main header .container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  main header {
+    padding-bottom: 55px;
+    min-height: 490px;
+  }
 }
 
 main header .header {
@@ -106,12 +199,38 @@ main header .header h1 {
   font-weight: 100;
 }
 
+@media screen and (max-width: 590px) {
+  main header .header h1 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  main header .header h1 {
+    font-size: 26px;
+    min-height: auto;
+  }
+}
+
 main header .header p {
   padding-top: 10px;
   font-family: "Merryweather";
   font-size: 16px;
   font-weight: 100;
   color: #898888;
+}
+
+@media screen and (max-width: 590px) {
+  main header .header p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  main header .header p {
+    font-size: 9px;
+    padding-top: 5px;
+  }
 }
 
 main header .header a {
@@ -133,6 +252,22 @@ main header .header a:hover {
   color: #ffffff;
 }
 
+@media screen and (max-width: 590px) {
+  main header .header a {
+    padding: 15px 0;
+    width: 160px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  main header .header a {
+    padding: 10px 0;
+    width: 100px;
+    margin-top: 20px;
+  }
+}
+
 main .about_us {
   min-height: 1341px;
   width: 100%;
@@ -140,6 +275,22 @@ main .about_us {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 974px) {
+  main .about_us {
+    min-height: 800px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us {
+    display: none;
+  }
+}
+
+main .about_us .about {
+  padding: 5px;
 }
 
 main .about_us .about h3 {
@@ -157,12 +308,21 @@ main .about_us .about p {
   color: #b7b7b7;
 }
 
+@media screen and (max-width: 974px) {
+  main .about_us .about h3 {
+    font-size: 30px;
+  }
+  main .about_us .about p {
+    font-size: 12px;
+  }
+}
+
 main .about_us .about_us_content {
-  max-width: 970px;
+  max-width: 960px;
 }
 
 main .about_us .about_us_content .about_container {
-  max-width: 960px;
+  max-width: 947px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,6 +330,12 @@ main .about_us .about_us_content .about_container {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 160px;
+}
+
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container {
+    padding-top: 100px;
+  }
 }
 
 main .about_us .about_us_content .about_container .about_left {
@@ -189,6 +355,12 @@ main .about_us .about_us_content .about_container .about_left {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container .about_left {
+    height: 340px;
+  }
+}
+
 main .about_us .about_us_content .about_container .about_left .about2011 {
   position: relative;
 }
@@ -204,6 +376,12 @@ main .about_us .about_us_content .about_container .about_left .about2011 div img
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container .about_left .about2011 div {
+    right: -94px;
+  }
 }
 
 main .about_us .about_us_content .about_container .about_left .about2013 {
@@ -223,6 +401,12 @@ main .about_us .about_us_content .about_container .about_left .about2013 div img
   height: auto;
 }
 
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container .about_left .about2013 div {
+    right: -104px;
+  }
+}
+
 main .about_us .about_us_content .about_container .about_right {
   text-align: left;
   margin-top: 140px;
@@ -238,6 +422,12 @@ main .about_us .about_us_content .about_container .about_right {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container .about_right {
+    height: 330px;
+  }
 }
 
 main .about_us .about_us_content .about_container .about_right .about2012 {
@@ -257,6 +447,12 @@ main .about_us .about_us_content .about_container .about_right .about2012 div im
   height: auto;
 }
 
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container .about_right .about2012 div {
+    left: -97px;
+  }
+}
+
 main .about_us .about_us_content .about_container .about_right .about2014 {
   position: relative;
 }
@@ -274,6 +470,12 @@ main .about_us .about_us_content .about_container .about_right .about2014 div im
   height: auto;
 }
 
+@media screen and (max-width: 974px) {
+  main .about_us .about_us_content .about_container .about_right .about2014 div {
+    left: -95px;
+  }
+}
+
 main .team {
   background-color: #ffffff;
   height: auto;
@@ -281,8 +483,21 @@ main .team {
   padding: 80px 0 128px 0;
 }
 
+@media screen and (max-width: 638px) {
+  main .team {
+    padding-top: 40px;
+    padding-bottom: 58px;
+  }
+}
+
 main .team .team_head {
   text-align: center;
+}
+
+@media screen and (max-width: 638px) {
+  main .team .team_head {
+    margin-bottom: 40px;
+  }
 }
 
 main .team .team_head h2 {
@@ -292,11 +507,23 @@ main .team .team_head h2 {
   color: #1d1d1d;
 }
 
+@media screen and (max-width: 445px) {
+  main .team .team_head h2 {
+    font-size: 26px;
+  }
+}
+
 main .team .team_head p {
   font-family: "Merryweather";
   font-size: 100;
   color: #898888;
   font-size: 16px;
+}
+
+@media screen and (max-width: 445px) {
+  main .team .team_head p {
+    font-size: 14px;
+  }
 }
 
 main .team .team_content .team_icons {
@@ -311,8 +538,27 @@ main .team .team_content .team_icons {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 638px) {
+  main .team .team_content .team_icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0px;
+  }
+}
+
 main .team .team_content .team_icons .box {
   width: 170px;
+}
+
+@media screen and (max-width: 638px) {
+  main .team .team_content .team_icons .box {
+    padding-top: 40px;
+  }
 }
 
 main .team .team_content .team_icons .box h3 {
@@ -344,6 +590,12 @@ main .team .team_content .team_icons .pad {
   padding-top: 90px;
 }
 
+@media screen and (max-width: 638px) {
+  main .team .team_content .team_icons .pad {
+    padding-top: 20px;
+  }
+}
+
 main .services {
   width: 100%;
   background: url(../img/services.jpg);
@@ -354,9 +606,24 @@ main .services {
   padding-top: 260px;
 }
 
+@media screen and (max-width: 832px) {
+  main .services {
+    background-image: none;
+    background-color: #1d1d1d;
+    height: auto;
+    padding-top: 70px;
+  }
+}
+
 main .services .services_content .services_head {
   padding-bottom: 210px;
   text-align: center;
+}
+
+@media screen and (max-width: 832px) {
+  main .services .services_content .services_head {
+    padding-bottom: 100px;
+  }
 }
 
 main .services .services_content .services_head h2 {
@@ -366,11 +633,23 @@ main .services .services_content .services_head h2 {
   color: #ffffff;
 }
 
+@media screen and (max-width: 445px) {
+  main .services .services_content .services_head h2 {
+    font-size: 26px;
+  }
+}
+
 main .services .services_content .services_head p {
   font-family: "Merryweather";
   font-size: 100;
   color: #898888;
   font-size: 16px;
+}
+
+@media screen and (max-width: 445px) {
+  main .services .services_content .services_head p {
+    font-size: 14px;
+  }
 }
 
 main .services .services_content .services_main {
@@ -381,6 +660,18 @@ main .services .services_content .services_main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 832px) {
+  main .services .services_content .services_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 main .services .services_content .services_main .box {
@@ -396,6 +687,18 @@ main .services .services_content .services_main .box {
           align-items: center;
   max-width: 340px;
   text-align: center;
+}
+
+@media screen and (max-width: 1055px) {
+  main .services .services_content .services_main .box {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  main .services .services_content .services_main .box {
+    margin-bottom: 40px;
+  }
 }
 
 main .services .services_content .services_main .box .icon {
@@ -429,6 +732,12 @@ main .services .services_content .blog {
   background-image: url(../img/blog.png);
 }
 
+@media screen and (max-width: 832px) {
+  main .services .services_content .blog {
+    margin-top: 40px;
+  }
+}
+
 main .services .services_content .blog .blog_main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,6 +746,13 @@ main .services .services_content .blog .blog_main {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 260px;
+}
+
+@media screen and (max-width: 832px) {
+  main .services .services_content .blog .blog_main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 }
 
 main .services .services_content .blog .blog_main a {
@@ -474,10 +790,22 @@ main .contact .contact_content .contact_head h2 {
   color: #1d1d1d;
 }
 
+@media screen and (max-width: 445px) {
+  main .contact .contact_content .contact_head h2 {
+    font-size: 26px;
+  }
+}
+
 main .contact .contact_content .contact_head p {
   font-family: "Merryweather";
   font-size: 100;
   color: #898888;
   font-size: 16px;
+}
+
+@media screen and (max-width: 445px) {
+  main .contact .contact_content .contact_head p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
