@@ -285,12 +285,13 @@ main .about_us {
 
 @media screen and (max-width: 564px) {
   main .about_us {
-    display: none;
+    background-image: none;
+    background-color: #1d1d1d;
   }
 }
 
 main .about_us .about {
-  padding: 5px;
+  padding: 10px;
 }
 
 main .about_us .about h3 {
@@ -298,6 +299,12 @@ main .about_us .about h3 {
   font-family: "Helvetica Neue LT Pro 55 Roman";
   font-size: 48px;
   font-weight: 100;
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us .about h3 {
+    padding-bottom: 10px;
+  }
 }
 
 main .about_us .about p {
@@ -314,6 +321,12 @@ main .about_us .about p {
   }
   main .about_us .about p {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .about_us .about {
+    text-align: center;
   }
 }
 
@@ -335,6 +348,22 @@ main .about_us .about_us_content .about_container {
 @media screen and (max-width: 974px) {
   main .about_us .about_us_content .about_container {
     padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }
 
@@ -361,6 +390,16 @@ main .about_us .about_us_content .about_container .about_left {
   }
 }
 
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_left {
+    width: 100%;
+    padding-right: 0;
+    width: 100%;
+    height: 250px;
+    text-align: left;
+  }
+}
+
 main .about_us .about_us_content .about_container .about_left .about2011 {
   position: relative;
 }
@@ -384,26 +423,38 @@ main .about_us .about_us_content .about_container .about_left .about2011 div img
   }
 }
 
-main .about_us .about_us_content .about_container .about_left .about2013 {
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_left .about2011 div {
+    display: none;
+  }
+}
+
+main .about_us .about_us_content .about_container .about_left .about2012 {
   position: relative;
 }
 
-main .about_us .about_us_content .about_container .about_left .about2013 div {
+main .about_us .about_us_content .about_container .about_left .about2012 div {
   position: absolute;
   width: 45px;
   top: 25px;
   right: -106px;
 }
 
-main .about_us .about_us_content .about_container .about_left .about2013 div img {
+main .about_us .about_us_content .about_container .about_left .about2012 div img {
   display: block;
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 974px) {
-  main .about_us .about_us_content .about_container .about_left .about2013 div {
+  main .about_us .about_us_content .about_container .about_left .about2012 div {
     right: -104px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_left .about2012 div {
+    display: none;
   }
 }
 
@@ -430,26 +481,48 @@ main .about_us .about_us_content .about_container .about_right {
   }
 }
 
-main .about_us .about_us_content .about_container .about_right .about2012 {
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_right {
+    width: 100%;
+    padding-right: 0;
+    width: 100%;
+    height: 250px;
+    margin-top: 16px;
+  }
+}
+
+main .about_us .about_us_content .about_container .about_right .about2013 {
   position: relative;
 }
 
-main .about_us .about_us_content .about_container .about_right .about2012 div {
+main .about_us .about_us_content .about_container .about_right .about2013 div {
   position: absolute;
   width: 30px;
   top: 25px;
   left: -92px;
 }
 
-main .about_us .about_us_content .about_container .about_right .about2012 div img {
+main .about_us .about_us_content .about_container .about_right .about2013 div img {
   display: block;
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 974px) {
-  main .about_us .about_us_content .about_container .about_right .about2012 div {
+  main .about_us .about_us_content .about_container .about_right .about2013 div {
     left: -97px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_right .about2013 div {
+    display: none;
   }
 }
 
@@ -473,6 +546,12 @@ main .about_us .about_us_content .about_container .about_right .about2014 div im
 @media screen and (max-width: 974px) {
   main .about_us .about_us_content .about_container .about_right .about2014 div {
     left: -95px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  main .about_us .about_us_content .about_container .about_right .about2014 div {
+    display: none;
   }
 }
 
@@ -779,7 +858,8 @@ main .contact .contact_content {
 }
 
 main .contact .contact_content .contact_head {
-  padding-top: 40px;
+  padding-top: 70px;
+  padding-bottom: 57px;
   text-align: center;
 }
 
@@ -806,6 +886,222 @@ main .contact .contact_content .contact_head p {
 @media screen and (max-width: 445px) {
   main .contact .contact_content .contact_head p {
     font-size: 14px;
+  }
+}
+
+main .contact .contact_content .contact_main .contact_icons {
+  margin: 0 auto;
+  max-width: 545px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 130px;
+}
+
+@media screen and (max-width: 414px) {
+  main .contact .contact_content .contact_main .contact_icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 240px;
+    padding-bottom: 50px;
+  }
+}
+
+main .contact .contact_content .contact_main .contact_icons .box {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 130px;
+  text-align: center;
+}
+
+main .contact .contact_content .contact_main .contact_icons .box .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+main .contact .contact_content .contact_main .contact_icons .box .icon img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+
+main .contact .contact_content .contact_main .contact_icons .box p {
+  font-family: "Helvetica Neue LT Pro 45 Light";
+  font-size: 13px;
+  color: #898888;
+}
+
+main .contact .contact_content .contact_main .contact_form {
+  padding: 96px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contact .contact_content .contact_main .contact_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 483px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .contact .contact_content .contact_main .contact_form form input {
+  padding: 15px 20px;
+  width: calc(100% - 40px);
+  border: 1px solid #1d1d1d;
+}
+
+main .contact .contact_content .contact_main .contact_form form input::-webkit-input-placeholder {
+  color: #8a8888;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form input:-ms-input-placeholder {
+  color: #8a8888;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form input::-ms-input-placeholder {
+  color: #8a8888;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form input::placeholder {
+  color: #8a8888;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form input:last-child {
+  padding: 15px 0px;
+  width: 100%;
+  border: 1px solid #1d1d1d;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #1d1d1d;
+  font-weight: 600;
+}
+
+main .contact .contact_content .contact_main .contact_form form input:last-child:hover {
+  background-color: #ffffff;
+  color: #8a8888;
+}
+
+main .contact .contact_content .contact_main .contact_form form textarea {
+  resize: none;
+  width: calc(100% - 40px);
+  padding: 20px 20px;
+  border: 1px solid #1d1d1d;
+}
+
+main .contact .contact_content .contact_main .contact_form form textarea::-webkit-input-placeholder {
+  color: #8a8888;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form textarea:-ms-input-placeholder {
+  color: #8a8888;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form textarea::-ms-input-placeholder {
+  color: #8a8888;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main .contact .contact_content .contact_main .contact_form form textarea::placeholder {
+  color: #8a8888;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro 45 Light";
+}
+
+main footer {
+  background-color: #ffffff;
+  height: auto;
+}
+
+main footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 118px;
+}
+
+main footer .footer p {
+  text-align: center;
+  font-family: "Helvetica Neue LT Pro 55 Roman";
+  font-size: 14px;
+  color: #3b3b3b;
+}
+
+@media screen and (max-width: 430px) {
+  main footer .footer p {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
